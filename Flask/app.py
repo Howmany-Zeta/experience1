@@ -29,5 +29,5 @@ def generate():
     generated_text = tokenizer.decode(generated_output[0], skip_special_tokens=True)
     
     return render_template('index.html', generated_image=img_str, generated_text=generated_text)
-   if __name__ == '__main__':
-       app.run()
+if __name__ == '__main__':
+    app.run()
